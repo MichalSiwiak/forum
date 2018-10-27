@@ -1,0 +1,11 @@
+
+<Realm className="org.apache.catalina.realm.JDBCRealm"
+connectionURL="jdbc:mysql://localhost/test?user=root&amp;password=root&amp;characterEncoding=utf8"
+digest="MD5"
+driverName="com.mysql.jdbc.Driver"
+roleNameCol="rola"
+userCredCol="haslo"
+userNameCol="login"
+userRoleTable="rola" 
+userTable="uzytkownik"  
+/>
