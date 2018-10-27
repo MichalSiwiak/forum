@@ -8,7 +8,7 @@ CREATE TABLE `uzytkownik` (
   PRIMARY KEY (`id`)
 ) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
-
+INSERT INTO uzytkownik (login, haslo) VALUES('jan', MD5('haslo'));
 
 USE test;
 DROP TABLE IF EXISTS `rola`;
@@ -19,7 +19,7 @@ CREATE TABLE `rola` (
   PRIMARY KEY (`id`)
 ) ENGINE=MYISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
-
+INSERT INTO rola (login, rola) VALUES('jan', 'uzytkownik');
 
 USE test;
 DROP TABLE IF EXISTS `temat`;
