@@ -18,7 +18,6 @@ public class UzytkownicyDAO {
 	}
 
 	public Uzytkownik pobierzPoLoginie(String login) {
-		System.out.println(em);
 		Uzytkownik u = (Uzytkownik) em.createQuery("SELECT u from Uzytkownik u WHERE u.login = :login")
 				.setParameter("login", login).getSingleResult();
 		return u;

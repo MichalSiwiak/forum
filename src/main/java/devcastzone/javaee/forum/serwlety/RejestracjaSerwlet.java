@@ -35,7 +35,8 @@ public class RejestracjaSerwlet extends HttpServlet {
 			try {
 				dao.pobierzPoLoginie(login);
 				request.setAttribute("blad", "Taki login już istnieje");
-
+				doGet(request, response);
+				return;
 			} catch (NoResultException nre) {
 				Uzytkownik u = new Uzytkownik();
 				u.setLogin(login);
